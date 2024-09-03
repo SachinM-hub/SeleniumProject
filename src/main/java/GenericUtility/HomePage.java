@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-    @FindBy(xpath = "//a[@href=\"index.php?module=Leads&action=index\"]")
+    @FindBy(xpath = "(//a[text()='Leads'])[1]")
 	private WebElement leads;
     @FindBy(xpath = "(//a[text()='Organizations'])[1]")
 	private WebElement org;

@@ -39,11 +39,11 @@ import SAMPLEProperties.IConstantUtility;
 		}
 		public String readDataFromEXcel(String sheetname, int rowNum , int cellNum) throws Exception  {
 			
-			FileInputStream fis =new FileInputStream(IConstantUtility.excelpath);
-			Workbook book=WorkbookFactory.create(fis);
-			Sheet sh =book.getSheet(sheetname);
-			DataFormatter format=new DataFormatter();
-			String value=format.formatCellValue(sh.getRow(rowNum).getCell(cellNum));
-			return value ;
+//			FileInputStream fis =new FileInputStream(IConstantUtility.excelpath);
+//			Workbook book=WorkbookFactory.create(fis);
+//			Sheet sh =book.getSheet(sheetname);
+//			DataFormatter format=new DataFormatter();
+//			String value =format.formatCellValue(sh.getRow(rowNum).getCell(cellNum));
+			return null ;
 		}
 }

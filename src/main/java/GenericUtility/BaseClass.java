@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import GenericUtility.SeleniumUtility;
 
 public class BaseClass {
-	 public static WebDriver driver = null;
+	 public WebDriver driver = null;
 	SeleniumUtility SUTIL = null;
 	PropertiesUtility PUTIL = new PropertiesUtility();
 	

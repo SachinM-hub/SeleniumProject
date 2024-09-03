@@ -23,14 +23,13 @@ public class LE_01 extends BaseClass {
 	 String LASTNAME = EUTIL.readDataFromEXcel("Leads",2,2);
 	 String COMPANY = EUTIL.readDataFromEXcel("Leads",2,3);
 	HomePage hp= new HomePage(driver);
-	Thread.sleep(2000);
 	hp.clickonLeads();
 	LeadsHomePage lp = new LeadsHomePage(driver);
-	Thread.sleep(4000);
+	Thread.sleep(2000);
 	lp.clickOnNewLeadBtn();
 	CreateNewLeadPage cn = new CreateNewLeadPage(driver);
 	cn.createLead(FIRSTNAME+num, LASTNAME, COMPANY);
-	 Thread.sleep(4000);
+	 Thread.sleep(3000);
 }
 }
 	
